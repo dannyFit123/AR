@@ -1,25 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-<body style='margin : 0px; overflow: hidden;'>
- 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel = "stylesheet" href ="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Source+Code+Pro"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/065d8dece4.js"crossorigin="anonymous"></script>
 </head>
+<body>
+    <div class = "phar">
+        <img class = "sidelogo" src = "images/sidelogo.png">
+        <h3 class = "signin" style = "color: #EAE2B7;">Non- Medical</h3>
+        <img class = "imageCafe" src = "images/HIRO.jpeg">
+        <div class="box">
+            <h1 class="titles">Cafeteria</h1>
+            <h5>Our cafeteria is located on the first floor. There are drinks, food, and sweets available.</h5>
+            <div class = 'button-sign-in5'>
+                <a href = "cafeteriaFloor.html"><button type="button"><span>View Map</span></button></a>
+            </div>
+        </div>
 
-<a-scene embedded arjs renderer="colorManagement: false">
-
-    <a-asset-item id="model1" src="models/scene.gltf"></a-asset-item>
-    </a-assets>
-  </a-assets>
-  <!-- create your content here. just a box for now -->
-  <a-box color="red" position='0 2 0' material='opacity: 0.5;' animation="property:rotation; from:0 360 0; loop:true"></a-box>
-
-  <!--<a-entity gltf-model="#model1"  animation-mixer scale="0.08 0.08 0.08" position="3 0 0" rotation="-90 0 0"></a-entity>-->
-
-  
-  <!-- define a camera which will move according to the marker position -->
-  <a-marker-camera preset='hiro'></a-marker-camera>
-</a-scene>
-
-
+        
+    </div>
+    
+</body>
 </html>
